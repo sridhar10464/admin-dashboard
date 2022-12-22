@@ -21,9 +21,9 @@ function EditUser(props) {
         }
         else
         {
-            navigate('/dashboard')
+            navigate('/dashboard');
         }
-    })
+    },[navigate,params.id,props.data.users]);
 
     /*
         without dependancy array - will be trrigered whenever the component renders
@@ -49,10 +49,8 @@ function EditUser(props) {
       //update the state with the new cloned variable
       props.data.setUsers(data)
       navigate('/dashboard')
-
-
-
     }
+
   return <div className='mx-auto col-10'>
   <Form>
   <Form.Group className="mb-3">
