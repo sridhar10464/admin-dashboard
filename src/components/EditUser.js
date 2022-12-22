@@ -23,7 +23,7 @@ function EditUser(props) {
         {
             navigate('/dashboard')
         }
-    },[])
+    })
 
     /*
         without dependancy array - will be trrigered whenever the component renders
